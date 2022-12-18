@@ -23,6 +23,28 @@ public class SubArraySumLength {
 
         return 0;
     }
+
+    public int solve(int[] A, int B, int C) {
+        int sum = 0;
+        for (int i = 0; i < B; i++){
+            sum += A[i];
+        }
+        
+        int start = 0, end = B;
+        while  ( end < A.length){
+            sum -= A[start];
+
+            sum += A[end];
+
+            if (sum == C)
+                return 1;
+            
+            start++;
+            end++;
+        }
+
+        return 0;
+    }
     //sliding window
     public static void main(String[] args) {
         SubArraySumLength arraySumLength = new SubArraySumLength();

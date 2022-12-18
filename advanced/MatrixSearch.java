@@ -1,3 +1,5 @@
+package advanced;
+
 public class MatrixSearch {
 
     public int solve(int[][] A, int B) {

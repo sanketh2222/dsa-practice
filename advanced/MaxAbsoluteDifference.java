@@ -1,3 +1,5 @@
+package advanced;
+
 public class MaxAbsoluteDifference {
     
     public static int maxArr(int[] A) {

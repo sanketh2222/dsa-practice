@@ -1,3 +1,5 @@
+package advanced;
+
 public class NumberOf1Bit {
 
     public int numSetBits(int A) {
