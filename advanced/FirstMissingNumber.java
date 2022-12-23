@@ -1,3 +1,5 @@
+package advanced;
+
 public class FirstMissingNumber {
 
     public static int firstMissingPositive(int[] A) {

@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.Set;
 import java.util.function.Function;
 import java.util.regex.Pattern;
@@ -19,8 +20,8 @@ public class Test {
     private static boolean matches;
     private static List<String> collect;
 
-    private static void changeValue(int a){
-        a= 10;
+    private static void changeValue(int a) {
+        a = 10;
     }
 
     public static int fun(int x, int n) {
@@ -167,5 +168,22 @@ public class Test {
         System.out.println(ans);
 
         System.out.println(1/2);
+
+        List<String> emailData = Arrays.asList("JM-HDFCBK",
+                "544842 is your OTP for your HDFC Bank NetBanking Transaction.",
+                "Use this password to complete your transaction.", "NEVER share OTP");
+        
+        String emailContentWithOtp = emailData.stream().filter(x -> x.contains("OTP")).findFirst().orElse("");
+        Optional<String> otpData =  Arrays.stream(emailContentWithOtp.split(" ")).filter(x -> x.length() == 6).findFirst();
+        System.out.println(otpData.get());
+
+        // for (String data1 : otp.get().split(" ")) {
+        //     if (data1.length() == 6)
+        //         System.out.println(data);
+        //   } 
+        System.out.println("".isBlank());
+        System.out.println("".isEmpty());
+
+
     }
 }

@@ -1,3 +1,5 @@
+package advanced;
+
 public class DivideIntegers {
 
     public int divide(int A, int B) {
