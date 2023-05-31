@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch SubArrayWithZeroSum",
+            "request": "launch",
+            "mainClass": "SubArrayWithZeroSum",
+            "projectName": "intermediate_28b2a487"
+        },
+        {
+            "type": "java",
+            "name": "Launch SubArrayWithGivenSum",
+            "request": "launch",
+            "mainClass": "SubArrayWithGivenSum",
+            "projectName": "intermediate_28b2a487"
+        },
+        {
+            "type": "java",
+            "name": "Launch ZeroSumSubArrayExists",
+            "request": "launch",
+            "mainClass": "ZeroSumSubArrayExists",
+            "projectName": "intermediate_28b2a487"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringReverse",
+            "request": "launch",
+            "mainClass": "StringReverse",
+            "projectName": "intermediate_28b2a487"
+        },
+        {
+            "type": "java",
+            "name": "Launch LongestPalindromicSubstring",
+            "request": "launch",
+            "mainClass": "LongestPalindromicSubstring",
+            "projectName": "intermediate_28b2a487"
+        },
+        {
+            "type": "java",
+            "name": "Launch EvenSubarray",
+            "request": "launch",
+            "mainClass": "EvenSubarray",
+            "projectName": "intermediate_28b2a487"
+        },
+        {
+            "type": "java",
             "name": "Launch isDictionary",
             "request": "launch",
             "mainClass": "isDictionary",

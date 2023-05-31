@@ -1,9 +1,10 @@
-package advanced;
+
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Flip {
+    
 
     public int[] flip(String A) {
         char[] arr = A.toCharArray();

@@ -1,4 +1,4 @@
-package advanced;
+
 
 public class MagicNumber {
     private int sum = 0;

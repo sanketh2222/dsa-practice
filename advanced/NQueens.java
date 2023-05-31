@@ -1,4 +1,4 @@
-package advanced;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -86,9 +86,10 @@ public class NQueens {
                 board.set(currentRow, currentBoardRowData.toString());
 
                 solveNQueens(board, currentRow + 1, totalRows);
-                board.set(currentRow, getBoardRowData(totalRows));// can bethe issue
+                board.set(currentRow, getBoardRowData(totalRows));//backtrack
             }
         }
+        //revert the decision/backtrack here if you want a single solution
 
     }
 

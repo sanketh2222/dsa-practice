@@ -1,4 +1,4 @@
-package advanced;
+
 
 public class NumberOf1Bit {
 

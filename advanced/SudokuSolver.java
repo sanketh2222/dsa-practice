@@ -1,9 +1,10 @@
-package advanced;
+
 
 public class SudokuSolver {
 
     public void solveSudoku(char[][] A) {
         sudokuSolver(A, 0);
+        //Print sudoku matrix
         for (int i = 0; i < A.length; i++) {
             for (int j = 0; j < A.length; j++) {
                 System.out.print(A[i][j] + " ");
@@ -24,6 +25,7 @@ public class SudokuSolver {
             sudokuSolver(mat, x + 1);
 
         } else {
+            //all possible numbers in a box for sudoku
             for (int i = 1; i <= 9; i++) {
                 isValid = isValid(mat, row, col, (char) (i + '0'));
                 if (isValid) {
