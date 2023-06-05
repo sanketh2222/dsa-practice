@@ -67,7 +67,6 @@ public class LRUCache {
     }
 
     public void set(int key, int value) {
-        // check if capacity is reached
         Node newNode = new Node(key, value);
 
         if (hashMap.containsKey(key)) {

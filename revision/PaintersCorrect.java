@@ -33,15 +33,15 @@ public class PaintersCorrect {
         return (int) (minTimeTaken % 10000003 * B % 10000003 ) %10000003;
     }
 
-    private boolean check(int arr[], int totalPainters, int minTimeTaken) {
+    private boolean check(int arr[], int totalPainters, int givenTime) {
         int totalPaintersConsumed = 1;
         int totalTimeTaken = arr[0];
 
         for (int i = 1; i < arr.length; i++) {
-            if (arr[i] > minTimeTaken) {
+            if (arr[i] > givenTime) {
                 return false;
 
-            } else if ((totalTimeTaken + arr[i]) > minTimeTaken) {
+            } else if ((totalTimeTaken + arr[i]) > givenTime) {
                 totalTimeTaken = arr[i];
                 totalPaintersConsumed += 1;
 

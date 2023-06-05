@@ -45,6 +45,7 @@ public class RunningMedian {
         int[] ans = median.solve(A);
         Arrays.stream(ans).forEach(System.out::println);
         System.out.println(test().size());
+        System.out.println(-1%19);
     }
 
     private static List<Integer> test() {
