@@ -1,4 +1,4 @@
-package advanced;
+
 
 public class InversionCount {
     long count = 0;

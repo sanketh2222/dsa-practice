@@ -11,11 +11,13 @@ public class PowerFunctionWithRecursion {
         // Below can be a pull answer if B is even, in case of odd power
         // it can be considered as partial answer which needs to be multipled by A
         int halfAns = (int) ((long) (halfPower % C) * halfPower % C) % C;
+        
         if (B % 2 == 0) {
             return halfAns;
         }
         if (A < 0)
             return (A % C) * (halfAns % C) + C;
+
         return (int) ((long) (A % C) * halfAns % C);
     }
 

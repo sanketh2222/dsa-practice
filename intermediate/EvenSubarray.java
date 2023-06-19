@@ -67,26 +67,30 @@ public class EvenSubarray {
                 516, 409, 868, 131, 664, 851, 721, 880, 20, 450, 745, 387, 787, 823, 392, 242, 674, 347, 65, 135, 819,
                 324, 651, 678, 139, 940);
         // Integer[] al = arrList.toArray(new Integer[10]);//A.toArray(new
+        
+        String ans = isEvenSubarray(arrList.toArray(Integer[]::new));
         // Integer[A.size()]);
         // String result = solve(new ArrayList<>(arrList));
         // System.out.println(arrList.size());
         // String isPossible = isEvenSubarray(al);
         // System.out.println(isPossible);
-        List<Integer> finalList = new ArrayList<>();
 
-        List<Integer> eList = Arrays.asList(17, 17, 5, 5, 5, 2);
-        eList.forEach(ele -> {
-            if (!finalList.contains(ele)) {
-                finalList.add(ele);
-            }
-        });
-        List<Integer> lst = Arrays.asList(16, 17, 4, 3, 5, 2);
-        // finalList.forEach(System.out::println);
-        List<Integer> rMax = buildRightMax(new ArrayList<>(lst));
+        System.out.println(ans);
+        // List<Integer> finalList = new ArrayList<>();
 
-        rMax.forEach(System.out::println);
-        int arr1[] = {1,2,3,4};
-        test(arr1);
-        System.out.println(arr1[2]);
+        // List<Integer> eList = Arrays.asList(17, 17, 5, 5, 5, 2);
+        // eList.forEach(ele -> {
+        //     if (!finalList.contains(ele)) {
+        //         finalList.add(ele);
+        //     }
+        // });
+        // List<Integer> lst = Arrays.asList(16, 17, 4, 3, 5, 2);
+        // // finalList.forEach(System.out::println);
+        // List<Integer> rMax = buildRightMax(new ArrayList<>(lst));
+
+        // rMax.forEach(System.out::println);
+        // int arr1[] = {1,2,3,4};
+        // test(arr1);
+        // System.out.println(arr1[2]);
     }
 }

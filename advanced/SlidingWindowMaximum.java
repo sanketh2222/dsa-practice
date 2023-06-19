@@ -1,4 +1,4 @@
-package advanced;
+
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -49,10 +49,10 @@ public class SlidingWindowMaximum {
 
     public static void main(String[] args) {
         SlidingWindowMaximum slidingWindowMaximum = new SlidingWindowMaximum();
-        List<Integer> ans = slidingWindowMaximum.slidingMaximum(List.of(10,1,8,9,7,6,5,11,3), 3);
-        ans.forEach(System.out::println);
-        Integer i1 = 10;
-        Integer i2 = 10;
-        System.out.println(i1 == i2);
-    }
+    //     List<Integer> ans = slidingWindowMaximum.slidingMaximum(List.of(10,1,8,9,7,6,5,11,3), 3);
+    //     ans.forEach(System.out::println);
+    //     Integer i1 = 10;
+    //     Integer i2 = 10;
+    //     System.out.println(i1 == i2);
+    // }
 }

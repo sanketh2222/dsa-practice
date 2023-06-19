@@ -1,4 +1,4 @@
-package advanced;
+
 
 public class ReversePairs {
     long count = 0;

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a459aad0-42d6-4da0-992e-2a53357546fd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/advanced/Flip.java" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/Flip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/advanced/MinXorValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/MinXorValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/advanced/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intermediate/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/intermediate/.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intermediate/EvenSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/intermediate/EvenSubarray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intermediate/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/intermediate/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intermediate/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/intermediate/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intermediate/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/intermediate/TreeNode.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2NGPTPApd2ZdGnC0DcbqtQRrDkV" />
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a459aad0-42d6-4da0-992e-2a53357546fd" name="Changes" comment="" />
+      <created>1679287464100</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679287464100</updated>
+    </task>
+    <servers />
+  </component>
+</project>

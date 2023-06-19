@@ -33,6 +33,10 @@ public class Test {
             return x * fun(x * x, (n - 1) / 2);
     }
 
+    private static int getCount(int low){
+        return ++low;
+    }
+
     public static void main(String[] args) {
         // List<String> list = Arrays.asList("a", "b", "c", "d", "d");
         // var a =list.stream().distinct().count();
@@ -139,15 +143,6 @@ public class Test {
 
         var n = list.stream().max(Comparator.comparing(ExcelRow::getValue)).get();
         // System.out.println(n.toString());
-
-        Map<String,String> map = new HashMap<String,String>();
-        map.put("Stock_Image", "Stock_Image");
-        map.put("Company_Image", "Company_Image");
-        map.put("Shop_Est_Certificate", "Shop_Est_Certificate");
-        map.put(null,"key");
-        map.put(null, "key2");
-
-        System.out.println(map.entrySet());
         
         Runtime runtime = Runtime.getRuntime();
         long totalMemory = runtime.totalMemory();
@@ -183,6 +178,10 @@ public class Test {
         //   } 
         System.out.println("".isBlank());
         System.out.println("".isEmpty());
+
+        int low = 10;
+        getCount(10);
+        System.out.println(low);
 
 
     }
