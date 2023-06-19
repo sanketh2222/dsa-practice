@@ -53,7 +53,7 @@ public class Kruskals {
         int[][] B = { { 1, 2, 14 }, { 2, 3, 7 }, { 3, 1, 2 } };
         int ans = kruskals.solve(3, B);
         System.out.println(ans);
-        List<String> lst = List.of("");
+        // List<String> lst = List.of("");
 
     }
 

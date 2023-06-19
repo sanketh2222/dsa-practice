@@ -42,11 +42,11 @@ public class FinishMaxJobs {
     }
 
     public static void main(String[] args) {
-        FinishMaxJobs finishMaxJobs = new FinishMaxJobs();
-        int maxJobs = finishMaxJobs.solve(new ArrayList<>(List.of(1, 5, 7, 1)),
-                new ArrayList<>(List.of(7, 8, 8, 8)));
+        // FinishMaxJobs finishMaxJobs = new FinishMaxJobs();
+        // int maxJobs = finishMaxJobs.solve(new ArrayList<>(List.of(1, 5, 7, 1)),
+        //         new ArrayList<>(List.of(7, 8, 8, 8)));
         
-        System.out.println(maxJobs);
+        // System.out.println(maxJobs);
 
     }
 }

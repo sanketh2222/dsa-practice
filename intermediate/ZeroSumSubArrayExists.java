@@ -3,6 +3,7 @@ import java.util.Set;
 
 public class ZeroSumSubArrayExists {
 
+    //used kadanes Algorithm 
     public int solve(int[] A) {
         Set<Integer> prefixSumHashSet = new HashSet<>();
         int sum = A[0];

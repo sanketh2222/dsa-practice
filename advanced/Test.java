@@ -74,8 +74,6 @@ public class Test {
                 // // Arrays.sort(args);
 
                 Queue<Integer> queue = new LinkedList<Integer>();
-
-     
         }
 
         private static int[][] test() {
