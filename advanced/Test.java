@@ -1,5 +1,4 @@
 
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -28,6 +27,7 @@ public class Test {
                 // System.out.println(C.length);
                 // System.out.println(D.length);
                 // System.out.println(E.length);
+                Test a = new Test();
 
                 List<Integer> list = Arrays.asList(100, 100, 100, 1);
                 // list.set(0, 2);
@@ -44,8 +44,8 @@ public class Test {
 
                 // System.out.println(avg);
                 int[] arr = { 2, 2, 2, 2, 8, 2, 2, 2, 10 };
-                Integer[] s = Arrays.stream(arr).distinct().boxed().toArray(Integer[]::new);
-                int[] ans1 = Arrays.stream(arr).distinct().toArray();
+                // Integer[] s = Arrays.stream(arr).distinct().boxed().toArray(Integer[]::new);
+                // int[] ans1 = Arrays.stream(arr).distinct().toArray();
                 // int[] arr1 = Arrays.asList(2, 2, 2, 2, 8, 2, 2, 2, 10).stream().mapToInt(x ->
                 // x).distinct().toArray();
                 // https://www.baeldung.com/java-stream-reduce
@@ -53,7 +53,7 @@ public class Test {
                 // System.out.println(i);
                 // }
                 int[] arr1 = { 1, 2, 3, 4 };
-                int value = Arrays.stream(arr1).reduce(1, (a, b) -> a * b);
+                // int value = Arrays.stream(arr1).reduce(1, (a, b) -> a * b);
                 // System.out.println(value);
 
                 // test();
@@ -67,13 +67,16 @@ public class Test {
                 ListNode nexNode = curr;
                 // ListNode temNode = curr.clone();
                 // curr.next = null; // has effect on next node
-                curr = curr.next; //no effect on next node
-                System.out.println(curr);
+                curr = curr.next; // no effect on next node
+                // System.out.println(curr);
                 // System.out.println(temNode);
                 // System.out.println(nexNode);
                 // // Arrays.sort(args);
 
                 Queue<Integer> queue = new LinkedList<Integer>();
+
+                int k = a.testLoop();
+                System.out.println("test loop is "+ k);
         }
 
         private static int[][] test() {
@@ -89,6 +92,16 @@ public class Test {
                 return mat;
         }
 
+        private int testLoop() {
+                int n = 10;
+                for (int i = 0; i < n; i++) {
+                        if (i == 3) {return -1;}
+                }
+
+                System.out.println("done");
+                return 13;
+        }
+
         private static ListNode createLinkedList() {
                 ListNode node1 = new ListNode(1);
                 ListNode node2 = new ListNode(2);
@@ -98,5 +111,7 @@ public class Test {
                 node2.next = node3;
                 node3.next = null;
                 return node1;
+  
         }
+        
 }

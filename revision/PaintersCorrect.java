@@ -50,7 +50,7 @@ public class PaintersCorrect {
             }
         }
 
-        return totalPaintersConsumed > totalPainters ? false : true;
+        return totalPaintersConsumed > totalPainters;
     }
     
     public static void main(String[] args) {

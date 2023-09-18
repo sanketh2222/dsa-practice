@@ -1,15 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a459aad0-42d6-4da0-992e-2a53357546fd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/advanced/Flip.java" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/Flip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/advanced/MinXorValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/MinXorValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/MaxProduct.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/SlowMango.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/AdjacentSum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/AliceAndEvenIndices.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/CoinChange.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/CompleteBTree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/Histogram.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/IdenticalBTree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/Job.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/KnapSack.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/KthLargestElement.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/LRUCache.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/LinkedListLoop.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/ListNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/LongestPalindromeCount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/LongestPalindromicSubstring.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/LongestSubArraySum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/MainCostStairs.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/MatrixMedian.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/MatrixSearch.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/MaxJuice.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/MaximumJobs.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/MaximumPositivity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/MinSquares.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/MinSubArraySum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/MinSwaps2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/NextRightPointer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/NoOfIsland.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/OddSubArraySum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/PaintersCorrect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/PaintersProblem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/Pair.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/PalindromicLinkedList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/RegularExpressionMatch.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/RotatedSortedSearch.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/RottenOranges.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/RunningMedian.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/SmallerNumbersCounter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/StockBuySellII.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/SubArrayWithZeoSum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/SumDifferenceI.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/SumTheDifference.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/TreeDeserialization.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/TreeLinkNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/TreeNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/revision/out/production/revision/revision/UserQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/advanced/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intermediate/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/intermediate/.vscode/launch.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intermediate/EvenSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/intermediate/EvenSubarray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intermediate/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/intermediate/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intermediate/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/intermediate/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intermediate/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/intermediate/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs_err_pid45944.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/revision/PalindromicLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/revision/PalindromicLinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,10 +68,64 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sanketh2222&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="2caecbec-65bf-4dd2-8c5c-feb7aa1b879f" />
+        <option name="url" value="git@github.com:sanketh2222/dsa-practice.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2NGPTPApd2ZdGnC0DcbqtQRrDkV" />
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/OneDrive - Rubix Data Sciences Private Limited/Desktop/09 August 2022 - Shortcut.lnk",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="AdjacentSum" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="revision.AdjacentSum" />
+      <module name="dsa-practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="revision.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -32,7 +135,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679287464100</updated>
+      <workItem from="1690639154927" duration="1568000" />
+      <workItem from="1690643806109" duration="7000" />
+      <workItem from="1690643828376" duration="91000" />
+      <workItem from="1690649530717" duration="80000" />
+      <workItem from="1690649632037" duration="56000" />
+      <workItem from="1690649775028" duration="34000" />
+      <workItem from="1690649847957" duration="42000" />
+      <workItem from="1690650015926" duration="33000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

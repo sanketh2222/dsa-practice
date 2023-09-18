@@ -1,14 +1,14 @@
 package revision;
 
-class ListNode {
-    public int val;
-    public ListNode next;
-
-    ListNode(int x) {
-        val = x;
-        next = null;
-    }
-}
+//class ListNode {
+//    public int val;
+//    public ListNode next;
+//
+//    ListNode(int x) {
+//        val = x;
+//        next = null;
+//    }
+//}
 
 public class PalindromicLinkedList {
 
