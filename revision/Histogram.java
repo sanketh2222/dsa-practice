@@ -58,7 +58,7 @@ public class Histogram {
             }
 
             if (stack.isEmpty()) {
-                nse[i] = -1;
+                nse[i] = A.length;
 
             } else {
                 nse[i] = stack.peek();
@@ -74,7 +74,7 @@ public class Histogram {
 
     public static void main(String[] args) {
         Histogram h = new Histogram();
-        int[] arr = { 1 };
+        int[] arr = { 2, 1, 5, 6, 2, 3 };
         System.out.println(h.largestRectangleArea(arr));
     }
 }

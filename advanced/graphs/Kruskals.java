@@ -58,6 +58,8 @@ public class Kruskals {
     }
 
     private int findComp(int[] comp, int x) {
+        // while trying to find the root component, we have to try to go till it returns
+        // the same value
         if (comp[x] == x) {
             return x;
         }

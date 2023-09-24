@@ -17,6 +17,7 @@ public class Dijkstras {
 
     }
 
+    //C refers to initial source node
     public int[] solve(int A, int[][] B, int C) {
         List<List<Pair>> adjList = buildAdjLst(A, B);
         int[] distance = new int[A];

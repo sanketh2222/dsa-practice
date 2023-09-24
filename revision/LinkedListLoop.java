@@ -21,7 +21,7 @@ public class LinkedListLoop {
         ListNode temp = A;
         ListNode meetPoint = detectCycle(temp);
         if (meetPoint != null)
-            removeCycle(meetPoint, temp);
+            removeCycle(meetPoint, temp);//meet point , head
 
         return temp;
 
