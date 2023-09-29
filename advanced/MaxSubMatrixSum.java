@@ -6,7 +6,6 @@ public class MaxSubMatrixSum {
         int rowSize = A.length;
         int colSize = A[0].length;
         long ans = Integer.MIN_VALUE;
-
         for (int startRow = 0; startRow < rowSize; startRow++) {
             long[] arr = new long[colSize];
             for (int endRow = startRow; endRow < rowSize; endRow++) {

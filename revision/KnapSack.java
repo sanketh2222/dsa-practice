@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class KnapSack {
 
+    //A is wt arr, B is value arr, C is max limit of weight that can be picked(k)
     public int solve(int[] A, int[] B, int C) {
         // dp state :- dp[i][j] : till index i and j is the limit of wt that can be
         // picked
@@ -27,7 +28,7 @@ public class KnapSack {
 
         // dp expression
         // either pick the current elemet: total weight limit will be reduced and value
-        // will be apped
+        // will be added
 
         if (dp[i][j] == -1) {
             int ans = -1;

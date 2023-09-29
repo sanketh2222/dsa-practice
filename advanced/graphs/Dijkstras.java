@@ -16,6 +16,7 @@ public class Dijkstras {
         }
 
     }
+    
 
     //C refers to initial source node
     public int[] solve(int A, int[][] B, int C) {
@@ -84,6 +85,9 @@ public class Dijkstras {
         int C = 4;
         int[] distance = dijkstras.solve(A, B, C);
         Arrays.stream(distance).forEach(System.out::println);
+        final int i;
+        i =10;
+        System.out.println(i);
 
     }
 }

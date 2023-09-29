@@ -26,7 +26,7 @@ public class SlidingWindowMaximum {
         ans.add(deque.peekFirst());
 
         while (end < A.size()) {
-
+            // end - B is the start element of the previous window
             if (!deque.isEmpty() && deque.peekFirst() == A.get(end - B))
                 deque.removeFirst();
 

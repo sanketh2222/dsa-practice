@@ -37,18 +37,18 @@ public class MinimumSpanningTree {
             visited[node] = 1;
             sum += wt;
 
-            //Total execution time = total no. of edges
+            // Total execution time = total no. of edges
             for (int i = 0; i < adj.get(node).size(); i++) {
                 int adjNode = adj.get(node).get(i).get(0);
                 int adjNodeWt = adj.get(node).get(i).get(1);
 
-                if (visited[adjNode] == 0){
-                    count+=1;
+                if (visited[adjNode] == 0) {
+                    count += 1;
                     queue.offer(new Pair(adjNode, node, adjNodeWt));
                 }
             }
         }
-        System.out.println("total count is "+count);
+        System.out.println("total count is " + count);
         return sum;
 
     }

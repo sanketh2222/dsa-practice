@@ -7,6 +7,7 @@ public class NQueens {
     ArrayList<ArrayList<String>> solutions = new ArrayList<>();
     private char QUEEN = 'Q';
 
+    //A is the size of the chess board
     public ArrayList<ArrayList<String>> solveNQueens(int A) {
         ArrayList<String> chessBoard = initializeBoard(A);
         solveNQueens(chessBoard, 0, A);
@@ -30,7 +31,9 @@ public class NQueens {
 
     private boolean canPlaceQueen(List<String> board, int row, int col) {
         int totalCols = board.get(0).length();
-        for (int i = 0; i <= row; i++) {
+
+        //check in every row if Queen is present in the same column
+        for (int i = 0; i < row; i++) {
             if (board.get(i).charAt(col) == QUEEN) {
                 return false;
             }
@@ -63,6 +66,7 @@ public class NQueens {
         return true;
     }
 
+    //Returns an empty row from a board 
     private String getBoardRowData(int n) {
         StringBuffer rowData = new StringBuffer();
         for (int i = 0; i < n; i++) {
@@ -82,14 +86,14 @@ public class NQueens {
             if (canPlaceQueen(board, currentRow, col)) {
                 StringBuffer currentBoardRowData = new StringBuffer(getBoardRowData(totalRows));
 
-                currentBoardRowData.setCharAt(col, QUEEN);
-                board.set(currentRow, currentBoardRowData.toString());
+                currentBoardRowData.setCharAt(col, QUEEN);//place the queen at col 
+                board.set(currentRow, currentBoardRowData.toString());//replace this row in the board 
 
                 solveNQueens(board, currentRow + 1, totalRows);
-                board.set(currentRow, getBoardRowData(totalRows));//backtrack
+                currentBoardRowData.setCharAt(col, '.'); //revert the decision on row of the board (backtrack)
+                board.set(currentRow, currentBoardRowData.toString()); // updated the row in the board
             }
         }
-        //revert the decision/backtrack here if you want a single solution
 
     }
 
