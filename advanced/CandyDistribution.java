@@ -29,10 +29,6 @@ public class CandyDistribution {
                 minCandy += 1;
             }
 
-            // if (A[i] < A[i - 1] && candies[i - 1] >= candies[i]){
-            // System.out.println(A[i]);
-            // }
-        }
 
         minCandy = Arrays.stream(candies).reduce((a, b) -> a > b ? a : b).getAsInt();
 

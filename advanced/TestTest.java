@@ -6,6 +6,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.Date;
@@ -13,6 +14,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Queue;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class TestTest implements TestC {
 
@@ -20,17 +23,15 @@ public class TestTest implements TestC {
         int node;
         int distance;
 
-
         public Pair(int node, int distance) {
             this.node = node;
             this.distance = distance;
         }
 
-        
     }
 
-    public void testDijkstras(){
-        Queue<Pair> pq = new PriorityQueue<>((x,y) -> x.distance - y.distance);
+    public void testDijkstras() {
+        Queue<Pair> pq = new PriorityQueue<>((x, y) -> x.distance - y.distance);
         pq.offer(new Pair(3, 10));
         pq.offer(new Pair(5, 2));
 
@@ -86,17 +87,56 @@ public class TestTest implements TestC {
     }
 
     public ArrayList<Integer> solve(ArrayList<Integer> A) {
-        Collections.sort(A,(a,b)->{
-            int c= a % 10;
+        Collections.sort(A, (a, b) -> {
+            int c = a % 10;
             int d = b % 10;
 
             if (c == b)
                 return b - a;
-            else 
+            else
                 return c - d;
         });
 
         return A;
+    }
+
+    public int maxProfit(final int[] A) {
+
+        if (A.length == 0) {
+            return 0;
+        }
+        int buyPrice = A[0];
+        int sellPrice = A[0];
+        int maxProfit = 0;
+        for (int i = 1; i < A.length; i++) {
+            if (A[i] < buyPrice) {
+                buyPrice = A[i];
+                sellPrice = 0;
+            }
+
+            maxProfit = Math.max(maxProfit, sellPrice - buyPrice);
+
+        }
+
+        return maxProfit;
+    }
+
+    public int findMin(int[] A) {
+        int low = 0, high = A.length - 1;
+        int ans = Integer.MAX_VALUE;
+        while (low <= high) {
+            int mid = (low + high) / 2;
+
+            if (A[mid] <= A[0]) {
+                ans = Math.min(ans, A[mid]);
+                high = mid - 1;
+
+            } else {
+                low = mid + 1;
+            }
+        }
+
+        return ans == Integer.MAX_VALUE ? A[0] : ans;
     }
 
     public static void main(String[] args) throws ParseException {
@@ -112,7 +152,31 @@ public class TestTest implements TestC {
         System.out.println("27AAKPB0593M1ZH".substring(0, 2));
         System.out.println(new BigDecimal("3").add(new BigDecimal("3")));
         T.testDijkstras();
-     
+        List<List<Integer>> lst = new ArrayList<>();
+        // int[][] dp = lst.toArray(new int[lst.get(a).size()][lst.size()]);
+        List<Integer> integers = new ArrayList<>();
+        integers.removeIf(x -> x == 1);
+        T.maxProfit(new int[] { 1, 2 });
+        T.findMin(new int[] { -1, 2, 3 });
+        String str = "sank";
+        int a1 = str.charAt(1);
+        System.out.println(a1);
+        lst.stream().flatMapToInt(x -> x.stream().mapToInt(Integer::intValue)).toArray();
+        List<List<Integer>> listOfLists = Arrays.asList(
+                Arrays.asList(1, 2, 3),
+                Arrays.asList(4, 5),
+                Arrays.asList(6, 7, 8, 9));
+
+        int[] flattenedArray = listOfLists.stream()
+                .flatMapToInt(list -> list.stream().mapToInt(Integer::intValue))
+                .toArray();
+
+        IntStream st = listOfLists.stream()
+                .flatMapToInt(list -> list.stream().mapToInt(Integer::intValue));
+        
+        IntStream.range(0, 1).toArray();
+        
+
     }
 
 }

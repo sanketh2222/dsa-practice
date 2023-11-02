@@ -24,15 +24,15 @@ public class RunningMedian {
                 maxHeap.offer(A[i]);
             }
 
-            if (maxHeap.size() > minHeap.size()) {
-                int ele = maxHeap.poll();
-                minHeap.offer(ele);
-
-            } else if (minHeap.size() - maxHeap.size() > 1) {
+            if (minHeap.size() - maxHeap.size() > 1) {
                 int ele = minHeap.poll();
                 maxHeap.offer(ele);
+            } else if (maxHeap.size() > minHeap.size()) {
+                int ele = maxHeap.poll();
+                minHeap.offer(ele);
             }
 
+            //if both heaps have equal elements than no swap is not required
             ans[i] = i % 2 != 0 ? maxHeap.peek() : minHeap.peek();
         }
 
@@ -45,7 +45,7 @@ public class RunningMedian {
         int[] ans = median.solve(A);
         Arrays.stream(ans).forEach(System.out::println);
         System.out.println(test().size());
-        System.out.println(-1%19);
+        System.out.println(-1 % 19);
     }
 
     private static List<Integer> test() {
@@ -59,14 +59,13 @@ public class RunningMedian {
         lst.add(100);
         lst.add(100);
         lst.add(100);
-        int maxLimit = lst.size() > 5 ? 5 : lst.size() ;
+        int maxLimit = lst.size() > 5 ? 5 : lst.size();
         return lst.subList(0, maxLimit);
     }
 
-    private boolean checkBit(int n,int i) {
+    private boolean checkBit(int n, int i) {
         int ans = n & (1 << i);
         return ans == 0 ? false : true;
     }
 
-    
 }

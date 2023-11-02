@@ -123,7 +123,6 @@ public class PossibilityOfFinishing {
         visited[src] = true;
 
         if (adjLst.get(src) == null) {
-            // System.out.println("null for src " + src);
             return;
         }
         for (int i = 0; i < adjLst.get(src).size(); i++) {

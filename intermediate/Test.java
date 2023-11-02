@@ -182,6 +182,7 @@ public class Test {
         int low = 10;
         getCount(10);
         System.out.println(low);
+        System.out.println(131/6);
 
 
     }
