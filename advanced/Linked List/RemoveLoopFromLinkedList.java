@@ -1,4 +1,15 @@
 public class RemoveLoopFromLinkedList {
+    class ListNode {
+
+        public int val;
+        public ListNode next;
+
+        ListNode(int x) {
+            val = x;
+            next = null;
+        }
+
+    }
 
     public ListNode solve(ListNode A) {
         // detect the cycle -> meet point
@@ -12,7 +23,7 @@ public class RemoveLoopFromLinkedList {
 
     }
 
-    private ListNode detectCycle(ListNode head) {
+    private void detectCycle(ListNode head) {
         ListNode slow = head;
         ListNode fast = head;
 
@@ -31,11 +42,9 @@ public class RemoveLoopFromLinkedList {
             }
 
             tempNode.next = null;
-            return tempNode;
-            
-        } else {
-            return null;
-        }
+            // return tempNode;
+
+        } 
 
     }
 

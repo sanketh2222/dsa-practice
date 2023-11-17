@@ -5,50 +5,49 @@ import java.util.List;
 import java.util.Queue;
 
 public class BipartiteRoadConstruct {
+    // https://www.scaler.com/academy/mentee-dashboard/class/70693/assignment/problems/9424?navref=cl_tt_lst_sl
 
-    public enum Color {
-        RED(1),
-        GREEN(2);
-
-        int value;
-
-        Color(int value) {
-            value = this.value;
-        }
-    }
-
+    // 1 -> red 0 -> blue
     public int solve(int A, int[][] B) {
         List<List<Integer>> adjList = buildAdjLst(B, A);
         Queue<Integer> queue = new LinkedList<>();
-        int[] bip = new int[A + 1];
-        Arrays.fill(bip, -1);
+        int[] colour = new int[A + 1];
+        Arrays.fill(colour, -1);
         int set1 = 1;
         int set2 = 0;
-        bip[1] = Color.RED.ordinal();
+        colour[1] = 1;
         queue.offer(1);
+        int mod = 1000000007;
+
 
         while (!queue.isEmpty()) {
             int u = queue.poll();
 
             for (int i = 0; i < adjList.get(u).size(); i++) {
                 int v = adjList.get(u).get(i);
-                if (bip[v] == -1) {
-                    Color color = bip[u] == Color.RED.ordinal() ? Color.GREEN : Color.RED;
-                    if (color == Color.RED) {
+                if (colour[v] == -1) {
+                    colour[v] = 1 - colour[u]; // invert the adj colour
+                    if (colour[v] == 1) {
                         set1 += 1;
                     } else {
                         set2 += 1;
                     }
-                    bip[v] = color.ordinal();
                     queue.offer(v);
                 }
             }
         }
-        int extra = (set1 * set2) - (A - 1);
+        int extra = (int) (((long)set1 * set2) % mod);
+        extra = (int)(((extra - (A - 1)) % mod + mod) % mod);
 
         return extra;
     }
 
+    /**
+     * 
+     * @param B edges array(u,v and wt)
+     * @param A no. of nodes
+     * @return
+     */
     private List<List<Integer>> buildAdjLst(int[][] B, int A) {
         List<List<Integer>> adjList = new ArrayList<>();
         for (int i = 0; i <= A; i++) {

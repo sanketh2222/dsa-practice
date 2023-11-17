@@ -26,7 +26,6 @@ public class Dijkstras {
         distance[C] = 0;
         Queue<Pair> minHeap = new PriorityQueue<>((x, y) -> x.dist - y.dist);
         minHeap.offer(new Pair(C, 0));
-        flo\
 
         while (!minHeap.isEmpty()) {
             Pair p = minHeap.poll();
@@ -86,9 +85,9 @@ public class Dijkstras {
         int C = 4;
         int[] distance = dijkstras.solve(A, B, C);
         Arrays.stream(distance).forEach(System.out::println);
-        final int i;
-        i =10;
-        System.out.println(i);
+        // final int i;
+        // i =10;
+        // System.out.println(i);
 
     }
 }

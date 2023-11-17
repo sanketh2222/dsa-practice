@@ -1,5 +1,4 @@
 
-
 public class RemoveNthNode {
 
     public ListNode removeNthFromEnd(ListNode A, int B) {
@@ -22,6 +21,30 @@ public class RemoveNthNode {
         intNode.next = temp;
 
         return A;
+    }
+
+    public ListNode removeNthFromEndII(ListNode head, int n) {
+        if (head == null || head.next == null) {
+            return null;
+        }
+
+        int k = getLength(head) - n;
+        ListNode temp = head;
+        ListNode prev = null;
+
+        while (k > 0) {
+            prev = temp;
+            temp = temp.next;
+            k--;
+        }
+        if (prev == null) {
+            return temp.next;
+        }
+        
+        prev.next = temp.next;
+
+        return head;
+
     }
 
     private int getLength(ListNode node) {

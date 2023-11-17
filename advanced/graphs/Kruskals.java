@@ -32,11 +32,11 @@ public class Kruskals {
         // Sort based on edge weights
         lst.sort((a, b) -> (a.wt - b.wt));
 
-        minCost = lst.stream().map(x -> getMinCost(x, comp)).reduce(minCost, (a, b) -> ((a % mod) + (b % mod)) % mod);
+        minCost = lst.stream().map(x -> getMinCostEdge(x, comp)).reduce(minCost, (a, b) -> ((a % mod) + (b % mod)) % mod);
         return minCost;
     }
 
-    private int getMinCost(Edge edge, int[] comp) {
+    private int getMinCostEdge(Edge edge, int[] comp) {
         int cu = findComp(comp, edge.u);
         int cv = findComp(comp, edge.v);
 

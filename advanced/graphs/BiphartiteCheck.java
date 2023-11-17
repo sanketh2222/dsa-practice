@@ -25,8 +25,8 @@ public class BiphartiteCheck {
                     for (int j = 0; j < adjLst.get(node).size(); j++) {
                         int adjNode = adjLst.get(node).get(j);
 
-                        if (color[adjNode] == -1) {
-                            color[adjNode] = 1 - color[node];
+                        if (color[adjNode] == -1) { // if in case adj node is not colured
+                            color[adjNode] = 1 - color[node]; // colur it with inverted coluor compared to its adj/prev node
                             queue.offer(adjNode);
 
                         } else if (color[adjNode] == color[node]) {

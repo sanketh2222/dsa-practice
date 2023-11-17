@@ -1,7 +1,6 @@
 
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -50,7 +49,9 @@ public class DirectGraphPath {
                 { 3, 4 },
                 { 5, 2 },
                 { 1, 3 } };
-        System.out.println(directGraphPath.solve(A, B));
+        // System.out.println(directGraphPath.solve(A, B));
+        int a = Integer.MAX_VALUE + 1;
+        System.out.println(a);
 
     }
 }
