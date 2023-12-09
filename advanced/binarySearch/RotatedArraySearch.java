@@ -1,4 +1,4 @@
-
+package binarySearch;
 
 public class RotatedArraySearch {
 

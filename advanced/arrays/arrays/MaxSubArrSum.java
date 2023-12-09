@@ -1,3 +1,6 @@
+package arrays;
+
+
 public class MaxSubArrSum {
     // Kadens Algo
     public int maxSubArray(final int[] A) {

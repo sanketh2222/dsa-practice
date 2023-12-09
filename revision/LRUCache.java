@@ -89,6 +89,7 @@ public class LRUCache {
         // update the hashmap
     }
 
+    // inserts the node given into the most recent end(left side)
     private void insert(Node node) {
         Node headNext = head.next;
         node.next = headNext;
@@ -97,6 +98,7 @@ public class LRUCache {
         node.prev = head;
     }
 
+    // removes a given node from the least recent end (right side)
     private void remove(Node node) {
         hashMap.remove(node.key);
         Node nextNode = node.next;

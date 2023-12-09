@@ -1,4 +1,4 @@
-package revision;
+package heaps;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -47,7 +47,7 @@ public class RunningMedian {
         Arrays.stream(ans).forEach(System.out::println);
         System.out.println(test().size());
         System.out.println(-1 % 19);
-        System.out.println(1^1);
+        System.out.println(1 ^ 1);
     }
 
     private static List<Integer> test() {

@@ -104,5 +104,7 @@ public class CoinChange {
         int B = 10;
         CoinChange coinChange = new CoinChange();
         System.out.println(coinChange.solve(A, B));
+        boolean[] barr = new boolean[10];
+        Arrays.fill(barr, true);
     }
 }

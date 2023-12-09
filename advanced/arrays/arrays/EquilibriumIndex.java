@@ -1,3 +1,6 @@
+package arrays;
+
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -71,7 +74,7 @@ public class EquilibriumIndex {
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        EquilibriumIndex solution = new EquilibriumIndex();
 
         List<Integer> A = Arrays.asList(-7, 1, 5, 2, -4, 3, 0);
         int res = solution.solve(new ArrayList<>(A));

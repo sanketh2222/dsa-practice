@@ -1,12 +1,24 @@
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
+import java.util.PriorityQueue;
 import java.util.Queue;
+import java.util.TreeMap;
 import java.util.stream.Collectors;
 
+class CustomComp implements Comparator<Integer> {
+        @Override
+        public int compare(Integer o1, Integer o2) {
+                return o2 - o1;
+        }
+
+}
 public class Test {
 
         public static void main(String[] args) throws CloneNotSupportedException {
@@ -27,14 +39,16 @@ public class Test {
                 // System.out.println(C.length);
                 // System.out.println(D.length);
                 // System.out.println(E.length);
-                Test a = new Test();
+                // Test a = new Test();
 
                 List<Integer> list = Arrays.asList(100, 100, 100, 1);
                 // list.set(0, 2);
 
-                int ans = list.stream().reduce(Integer.MIN_VALUE, (a, b) -> Integer.max(a, b));
-                int sum = list.stream().reduce(0, (a, b) -> (a + b) / 2);
-                int minValue = list.stream().reduce(Integer.MAX_VALUE, (a, b) -> a < b ? a : b);
+                // int ans = list.stream().reduce(Integer.MIN_VALUE, (a, b) -> Integer.max(a,
+                // b));
+                // int sum = list.stream().reduce(0, (a, b) -> (a + b) / 2);
+                // int minValue = list.stream().reduce(Integer.MAX_VALUE, (a, b) -> a < b ? a :
+                // b);
                 // System.out.println(minValue);
 
                 // list.forEach(System.out::println);
@@ -67,22 +81,45 @@ public class Test {
                 ListNode nexNode = curr;
                 // ListNode temNode = curr.clone();
                 // curr.next = null; // has effect on next node
-                curr = curr.next; // no effect on next node
+                // curr = curr.next; // no effect on next node
                 // System.out.println(curr);
                 // System.out.println(temNode);
                 // System.out.println(nexNode);
                 // // Arrays.sort(args);
 
-                Queue<Integer> queue = new LinkedList<Integer>();
+                Map<Character, Integer> mp = new TreeMap<>(Collections.reverseOrder());
+                Queue<Character> queue = new PriorityQueue<>((a,b) -> {
+                        if (mp.get(b) - mp.get(a) == 0) {
+                                return a.compareTo(b);
+                        }
+                        return mp.get(b) - mp.get(a);
+                });
+                mp.put('a', 1);
+                mp.put('b', 2);
+                mp.put('c', 1);
 
-                int k = a.testLoop();
-                System.out.println("test loop is "+ k);
+                List<Character> list1 = new ArrayList<>(mp.keySet());
+
+                queue.addAll(list1);
+
+                while (!queue.isEmpty()) {
+                       Character ch = queue.poll();
+                       int occ = mp.get(ch);
+                       while (occ > 0) {
+                               System.out.print(ch);
+                               occ--;
+                        
+                       }
+                }
+
+                // int k = a.testLoop();
+                // System.out.println("test loop is " + k);
         }
 
         private static int[][] test() {
                 List<List<Integer>> newLst = new ArrayList<>();
-                newLst.add(List.of(1, 1, 3));
-                newLst.add(List.of(3, 2, 1));
+                // newLst.add(List.of(1, 1, 3));
+                // newLst.add(List.of(3, 2, 1));
 
                 newLst.stream().flatMap(List::stream).collect(Collectors.toList());
 
@@ -95,7 +132,9 @@ public class Test {
         private int testLoop() {
                 int n = 10;
                 for (int i = 0; i < n; i++) {
-                        if (i == 3) {return -1;}
+                        if (i == 3) {
+                                return -1;
+                        }
                 }
 
                 System.out.println("done");
@@ -107,11 +146,11 @@ public class Test {
                 ListNode node2 = new ListNode(2);
                 ListNode node3 = new ListNode(3);
 
-                node1.next = node2;
-                node2.next = node3;
-                node3.next = null;
+                // node1.next = node2;
+                // node2.next = node3;
+                // node3.next = null;
                 return node1;
-  
+
         }
-        
+
 }
