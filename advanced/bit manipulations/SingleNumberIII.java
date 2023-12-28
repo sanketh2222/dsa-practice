@@ -32,6 +32,12 @@ public class SingleNumberIII {
         String str = "11000000000000000000000000000000";
         // System.out.println(str.length());
         System.out.println(ans+ans2);
+        int a = 3;
+        int b = 30;
+        String aa = String.valueOf(a) + String.valueOf(b);
+        String bb = String.valueOf(b) + String.valueOf(a);
+        System.out.println(aa.compareTo(bb));
+        System.out.println(bb.compareTo(aa));
         
     }
 }
