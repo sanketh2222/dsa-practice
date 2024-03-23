@@ -1,5 +1,4 @@
 
-
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
@@ -37,7 +36,7 @@ public class SlidingWindowMaximum {
             if (deque.isEmpty() || (A.get(end) <= deque.peekLast()))
                 deque.addLast(A.get(end));
 
-            ans.add(deque.peekFirst());
+            ans.add(deque.peekFirst()); // peekFirst() always gives the maximum element
 
             start++;
             end++;
@@ -47,12 +46,23 @@ public class SlidingWindowMaximum {
         return new ArrayList<>(ans);
     }
 
+    private static int[][] test() {
+        List<List<Integer>> tripplets = new ArrayList<>();
+        Integer[][] mat = tripplets.stream().flatMap(List::stream).toArray(Integer[][]::new);
+        // covert to 2d arr int[][]
+        int[][] arr = tripplets.stream().flatMap(List::stream).toArray(int[][]::new);
+        return arr;
+    }
+
     public static void main(String[] args) {
         SlidingWindowMaximum slidingWindowMaximum = new SlidingWindowMaximum();
-    //     List<Integer> ans = slidingWindowMaximum.slidingMaximum(List.of(10,1,8,9,7,6,5,11,3), 3);
-    //     ans.forEach(System.out::println);
-    //     Integer i1 = 10;
-    //     Integer i2 = 10;
-    //     System.out.println(i1 == i2);
-    // }
+        // List<Integer> ans =
+        // slidingWindowMaximum.slidingMaximum(List.of(10,1,8,9,7,6,5,11,3), 3);
+        // ans.forEach(System.out::println);
+        // Integer i1 = 10;
+        // Integer i2 = 10;
+        // System.out.println(i1 == i2);
+        List<List<Integer>> tripplets = new ArrayList<>();
+        Integer[][] arr = tripplets.stream().flatMap(List::stream).toArray(Integer[][]::new);
+    }
 }

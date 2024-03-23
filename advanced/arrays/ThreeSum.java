@@ -5,14 +5,17 @@ import java.util.Arrays;
 import java.util.List;
 
 public class ThreeSum {
-    public int[][] threeSum(int[] A) {
+
+    static final int TARGET_SUM = 0;
+
+    public static int[][] threeSum(int[] A) {
         int n = A.length;
         Arrays.sort(A);
         List<List<Integer>> tripplets = new ArrayList<>();
-        final int TARGET = 0;
         for (int low = 0; low < n - 2; low++) {
 
-            if (low > 0 && A[low] == A[low - 1])  continue; // avoid duplicate
+            if (low > 0 && A[low] == A[low - 1])
+                continue; // avoid duplicate
             // 2 sum sorted
             int mid = low + 1;
             int high = n - 1;
@@ -20,15 +23,15 @@ public class ThreeSum {
             while (mid < high) {
                 int sum = A[low] + A[mid] + A[high];
 
-                if (sum == TARGET) {
-                    tripplets.add(Arrays.asList(A[low], A[mid], A[high])); 
+                if (sum == TARGET_SUM) {
+                    tripplets.add(Arrays.asList(A[low], A[mid], A[high]));
                     mid++;
                     high--;
 
-                    while (mid < high && A[mid] == A[mid - 1]) mid++; // avoid duplicate
+                    while (mid < high && A[mid] == A[mid - 1])  mid++; // avoid duplicate
                     while (mid > high && A[high] == A[high + 1]) high--; // avoid duplicate
 
-                } else if (sum < TARGET) {
+                } else if (sum < TARGET_SUM) {
                     mid++;
                 } else {
                     high--;
@@ -40,13 +43,12 @@ public class ThreeSum {
 
     }
 
-    private int[][] convertToArr(List<List<Integer>> triplets) {
+    private static int[][] convertToArr(List<List<Integer>> triplets) {
         int[][] arr = triplets.stream()
                 .map(list -> list.stream().mapToInt(Integer::intValue).toArray()) // convert to int array(int[])
                 .toArray(int[][]::new); // convert to 2d array
         return arr;
     }
-    
 
     public static void main(String[] args) {
         ThreeSum threeSum = new ThreeSum();

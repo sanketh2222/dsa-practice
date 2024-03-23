@@ -1,4 +1,4 @@
-package LinkedList;
+package dsa-practice.advanced.LinkedList;
 
 class ListNode {
     public int val;

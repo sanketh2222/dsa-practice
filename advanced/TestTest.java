@@ -143,8 +143,8 @@ public class TestTest implements TestC {
         TestTest T = new TestTest();
         T.test();
         System.out.println(T.isFromDateGreaterThanToDate("01-01-2021", "01-01-2020"));
-        int a = 20;
-        T.test1(a);
+        // int a = 20;
+        // T.test1(a);
         System.out.println(a);
         String fromDate = "01-01-2021";
         String toDate = "01-02-2021";
@@ -175,7 +175,12 @@ public class TestTest implements TestC {
                 .flatMapToInt(list -> list.stream().mapToInt(Integer::intValue));
         
         IntStream.range(0, 1).toArray();
-        
+        int a = 3;
+        int b = 30;
+        String aa = String.valueOf(a) + String.valueOf(b);
+        String bb = String.valueOf(b) + String.valueOf(a);
+        System.out.println(aa.compareTo(bb));
+        System.out.println(bb.compareTo(aa));
 
     }
 

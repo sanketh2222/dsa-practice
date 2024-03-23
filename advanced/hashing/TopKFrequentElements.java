@@ -1,16 +1,13 @@
 package hashing;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
-import java.util.Comparator;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.PriorityQueue;
-import java.util.Queue;
-import java.util.TreeMap;
-import java.util.Map.Entry;
+import java.util.stream.Collectors;
 
 public class TopKFrequentElements {
 
@@ -24,14 +21,13 @@ public class TopKFrequentElements {
         List<Integer> ans = new ArrayList<>(map.keySet());
         ans.sort((a, b) -> map.get(b) - map.get(a));
         // ans.forEach(x -> pq.offer(x));
+        // List<Integer> lst = Arrays.stream(nums).boxed().collect(Collectors.toList());
         return ans.stream().mapToInt(Integer::intValue).limit(k).toArray();
+
     }
 
-    
-
-    //TC -> O(N) + O(N log N)
-    //SC -> O(N)
-
+    // TC -> O(N) + O(N log N)
+    // SC -> O(N)
 
     public static Date getNextDayDate(Date date, int noOfDays) {
         Calendar calendar = Calendar.getInstance();
@@ -39,7 +35,6 @@ public class TopKFrequentElements {
         calendar.add(Calendar.DAY_OF_MONTH, noOfDays);
         return calendar.getTime();
     }
-
 
     public static void main(String[] args) {
         TopKFrequentElements kFrequentElements = new TopKFrequentElements();

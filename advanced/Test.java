@@ -5,7 +5,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Queue;
@@ -19,6 +19,7 @@ class CustomComp implements Comparator<Integer> {
         }
 
 }
+
 public class Test {
 
         public static void main(String[] args) throws CloneNotSupportedException {
@@ -88,7 +89,7 @@ public class Test {
                 // // Arrays.sort(args);
 
                 Map<Character, Integer> mp = new TreeMap<>(Collections.reverseOrder());
-                Queue<Character> queue = new PriorityQueue<>((a,b) -> {
+                Queue<Character> queue = new PriorityQueue<>((a, b) -> {
                         if (mp.get(b) - mp.get(a) == 0) {
                                 return a.compareTo(b);
                         }
@@ -103,14 +104,21 @@ public class Test {
                 queue.addAll(list1);
 
                 while (!queue.isEmpty()) {
-                       Character ch = queue.poll();
-                       int occ = mp.get(ch);
-                       while (occ > 0) {
-                               System.out.print(ch);
-                               occ--;
-                        
-                       }
+                        Character ch = queue.poll();
+                        int occ = mp.get(ch);
+                        while (occ > 0) {
+                                System.out.print(ch);
+                                occ--;
+
+                        }
                 }
+
+                Map<Integer, Node> map = new HashMap<>();
+                Node node = new Node(2);
+                map.put(1, node);
+
+                node.data = 3;
+                System.out.println("node val is " + map.get(1).data);
 
                 // int k = a.testLoop();
                 // System.out.println("test loop is " + k);

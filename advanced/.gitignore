@@ -1,0 +1,13 @@
+
+# Ignore IntelliJ IDEA
+.idea
+
+# Ignore VSCode
+.vscode
+
+# Ignore XMLs
+*.xml
+*.XML
+*.xml.gz
+*.XML.gz
+

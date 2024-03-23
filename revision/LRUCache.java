@@ -45,6 +45,7 @@ public class LRUCache {
     public int get(int key) {
         // check if the key exists
         // if exits then make it MRU and return the value
+        
         // Making MRU
         // delete/remove
         // detete the node from the existig location (Disconnect the connections)
@@ -98,7 +99,6 @@ public class LRUCache {
         node.prev = head;
     }
 
-    // removes a given node from the least recent end (right side)
     private void remove(Node node) {
         hashMap.remove(node.key);
         Node nextNode = node.next;
