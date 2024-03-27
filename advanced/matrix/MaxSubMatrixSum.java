@@ -1,4 +1,4 @@
-package arrays;
+package matrix;
 
 
 public class MaxSubMatrixSum {
@@ -21,6 +21,7 @@ public class MaxSubMatrixSum {
         return ans;
     }
 
+    //kadane's algorithm
     private int maxSubArray(long[] A) {
         int sum = 0;
         int ans = Integer.MIN_VALUE;

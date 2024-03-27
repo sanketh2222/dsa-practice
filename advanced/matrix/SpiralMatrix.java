@@ -1,3 +1,5 @@
+package matrix;
+
 public class SpiralMatrix {
 
     public int[][] generateMatrix(int A) {

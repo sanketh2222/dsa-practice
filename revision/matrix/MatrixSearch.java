@@ -1,4 +1,4 @@
-package revision;
+package revision.matrix;
 
 public class MatrixSearch {
 

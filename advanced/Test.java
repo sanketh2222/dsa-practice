@@ -122,6 +122,7 @@ public class Test {
 
                 // int k = a.testLoop();
                 // System.out.println("test loop is " + k);
+                System.out.println(0 % 2);
         }
 
         private static int[][] test() {
