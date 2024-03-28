@@ -1,6 +1,5 @@
 package matrix;
 
-
 import java.util.ArrayList;
 
 public class SubMatrixSumQuries {
@@ -9,16 +8,7 @@ public class SubMatrixSumQuries {
         int colSize = A[0].length;
         int mod = 1000000007;
         int[][] ps = new int[rowSize][colSize];
-        int[] ans = new int[2];
-        // Set<Integer> ansLst = new LinkedHashSet<Integer>();
         long sum = 0;
-
-        /*
-         * if (A.length == 1){
-         * ansLst.add(0);
-         * return ansLst.stream().mapToInt(x -> x).toArray();
-         * }
-         */
 
         ArrayList<Integer> ansLst = new ArrayList<>();
 
@@ -43,7 +33,6 @@ public class SubMatrixSumQuries {
         }
 
         // Query 1
-
         for (int i = 0; i < B.length; i++) {
             int topLeftRowIndex = B[i] - 1;// a1
             int topLeftColIndex = C[i] - 1;// b1
@@ -54,20 +43,7 @@ public class SubMatrixSumQuries {
             int fisrtMaxSum = (int) getSum(ps, topLeftRowIndex, topLeftColIndex,
                     bottomRightRowIndex, bottomRightColIndex);
 
-            // Query 2
-            /*
-             * topLeftRowIndex = B[i + 1] - 1;
-             * topLeftColIndex = C[i + 1] - 1;
-             * 
-             * bottomRightRowIndex = D[i + 1] - 1;
-             * bottomRightColIndex = E[i + 1] - 1;
-             * 
-             * int secondMaxSum = (int) getSum(ps, topLeftRowIndex, topLeftColIndex,
-             * bottomRightRowIndex, bottomRightColIndex);
-             */
-
             ansLst.add(fisrtMaxSum);
-            // ansLst.add(secondMaxSum);
         }
 
         return ansLst.stream().mapToInt(x -> x).toArray();
