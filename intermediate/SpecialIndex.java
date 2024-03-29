@@ -8,8 +8,6 @@ public class SpecialIndex {
             if (i % 2 == 0)
                 sumEven += A[i];
             prefixEven[i] = sumEven;
-            // System.out.print(prefixEven[i]);
-
         }
         System.out.println();
 
@@ -18,7 +16,6 @@ public class SpecialIndex {
                 sumOdd += A[i];
 
             prefixOdd[i] = sumOdd;
-            // System.out.print(prefixOdd[i]);
         }
 
         sumEven = 0;
@@ -42,7 +39,6 @@ public class SpecialIndex {
 
     public static void main(String[] args) {
         SpecialIndex index = new SpecialIndex();
-        // System.out.println(index.solve(new int[]{1, 2, 3, 7, 1, 2, 3}));
         int a = index.solve(new int[] { 1, 2, 3, 7, 1, 2, 3 });
         System.out.println(a);
 

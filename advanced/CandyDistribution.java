@@ -28,8 +28,7 @@ public class CandyDistribution {
                 candies[i - 1] = candies[i] + 1;
                 minCandy += 1;
             }
-
-
+        }
         minCandy = Arrays.stream(candies).reduce((a, b) -> a > b ? a : b).getAsInt();
 
         return minCandy;

@@ -5,6 +5,7 @@ public class FirstMissingNumber {
 
     public static int firstMissingPositive(int[] A) {
 
+        // Mark the negative numbers and numbers greater than the length of the array as the length of the array + 1
         for (int i = 0; i < A.length; i++) {
             if (A[i] <= 0) {
                 A[i] = A.length + 1;
@@ -12,6 +13,7 @@ public class FirstMissingNumber {
 
         }
 
+        // Mark the numbers that are present in the array as negative
         for (int i = 0; i < A.length; i++) {
             int val =Math.abs(A[i]);
             if ( val <= A.length) {
@@ -19,6 +21,7 @@ public class FirstMissingNumber {
             }
         }
 
+        // Find the first positive number
         for (int i = 0; i < A.length; i++) {
             if (A[i] > 0)
                 return i + 1;
