@@ -6,6 +6,8 @@ import java.util.Map;
 
 public class MaximumXor {
 
+    //use concept of trie
+    
     public class Node {
         Node[] ch = new Node[2];
 

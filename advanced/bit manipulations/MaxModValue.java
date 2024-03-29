@@ -11,9 +11,10 @@ public class MaxModValue {
         int ans = Integer.MIN_VALUE;
         int maxMod = 0;
 
-        if (n == 1)
-            return A[0];
+        if (n == 1) { return A[0]; }
+
         Arrays.sort(A);
+        
         while (end < n) {
             maxMod = Math.max(A[start] % A[end] , A[end] % A[start]);
             ans = Math.max(maxMod,ans);
