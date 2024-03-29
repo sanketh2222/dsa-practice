@@ -1,11 +1,11 @@
 package arrays;
 
-
 public class FirstMissingNumber {
 
     public static int firstMissingPositive(int[] A) {
 
-        // Mark the negative numbers and numbers greater than the length of the array as the length of the array + 1
+        // Mark the negative numbers and numbers greater than the length of the array as
+        // the length of the array + 1
         for (int i = 0; i < A.length; i++) {
             if (A[i] <= 0) {
                 A[i] = A.length + 1;
@@ -15,8 +15,9 @@ public class FirstMissingNumber {
 
         // Mark the numbers that are present in the array as negative
         for (int i = 0; i < A.length; i++) {
-            int val =Math.abs(A[i]);
-            if ( val <= A.length) {
+            int val = Math.abs(A[i]); // reason for abs is that we may encounter duplicates which are already marked as
+                                      // negative already marked as -ve before
+            if (val <= A.length) {//skip the numbers greater than the length of the array
                 A[val - 1] = (Math.abs(A[val - 1])) * -1;
             }
         }
@@ -31,7 +32,7 @@ public class FirstMissingNumber {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 3, 4, -1, 1};
+        int[] arr = { 3, 4, -1, 1 };
         int ans = FirstMissingNumber.firstMissingPositive(arr);
         System.out.println(ans);
 

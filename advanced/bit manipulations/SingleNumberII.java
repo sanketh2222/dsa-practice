@@ -2,7 +2,9 @@
 
 public class SingleNumberII {
 
-
+    //Question: https://www.interviewbit.com/problems/single-number-ii/
+    //Given an array of integers, every element appears thrice except for one which occurs once.
+    //leetcode : https://leetcode.com/problems/single-number-ii/
     public int singleNumber(final int[] A) {
         int ans = 0;
         for (int i = 0; i <= 31; i++) {
