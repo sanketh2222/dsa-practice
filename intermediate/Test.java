@@ -87,8 +87,7 @@ public class Test {
         Node node = new Node();
         node.data = 1;
 
-        Node node2 = new Node();
-        node2.data = 2;
+        Node node2 = new Node();        node2.data = 2;
         node.next = node2;
 
         // node3

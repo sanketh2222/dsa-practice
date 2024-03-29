@@ -4,13 +4,15 @@ public class SpecialIndex {
         int sumEven = 0, sumOdd = 0;
         int[] prefixEven = new int[A.length];
         int[] prefixOdd = new int[A.length];
+
+        // Prefix sum of even and odd indexed elements
         for (int i = 0; i < A.length; i++) {
             if (i % 2 == 0)
                 sumEven += A[i];
             prefixEven[i] = sumEven;
         }
-        System.out.println();
 
+        // Prefix sum of odd indexed elements
         for (int i = 0; i < A.length; i++) {
             if (i % 2 == 1)
                 sumOdd += A[i];
