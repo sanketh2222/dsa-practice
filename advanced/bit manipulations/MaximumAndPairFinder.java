@@ -5,17 +5,17 @@ public class MaximumAndPairFinder {
 
         // Iterate through each bit position from MSB to LSB
         for (int i = 31; i >= 0; i--) {
-            int count = 0; // Count the number of set bits at ith index
+            int setBitCount = 0; // Count the number of set bits at ith index
 
             // Count the number of elements with the bit set at ith index
             for (int num : nums) {
                 if (checkBit(num, i)) {// check if the ith bit is set
-                    count++;
+                    setBitCount++;
                 }
             }
 
             // If count is greater than or equal to 2, set the bit in the answer
-            if (count >= 2) {
+            if (setBitCount >= 2) { // can make a pair for this bit for AND operation
                 ans |= (1 << i); // Set the bit at ith index in the answer
 
                 // Set all numbers which have 0 bit at this position to 0
