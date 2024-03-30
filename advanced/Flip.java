@@ -35,22 +35,6 @@ public class Flip {
                 ans[0] = start + 1;
                 ans[1] = i + 1;
             }
-            // maxSum = Math.max(maxSum, sum);
-
-            // if (sum > 0 && start == -1) {
-            //     start = i;
-            // }
-            // if (sum > 0) {
-            //     end = i;
-            // } else {
-            //     sum = 0;
-            //     start = -1;
-            // }
-
-            // if ((start > 0 && end > 0) && (start < finalStart && end < finalEnd)) {
-            //     finalStart = start;
-            //     finalEnd = end;
-            // }
         }
 
         if (ans[0] == -1){
