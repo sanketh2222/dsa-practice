@@ -2,6 +2,17 @@
 
 public class Merge2SortedLists {
 
+    //list node definition
+    public class ListNode {
+        public int val;
+        public ListNode next;
+
+        ListNode(int x) {
+            val = x;
+            next = null;
+        }
+    }
+
     public ListNode mergeTwoLists(ListNode A, ListNode B) {
         // Selection of head node of the merged list
         ListNode head = null, temp = null;

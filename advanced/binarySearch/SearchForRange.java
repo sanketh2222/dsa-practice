@@ -1,3 +1,4 @@
+package binarySearch;
 
 
 public class SearchForRange {

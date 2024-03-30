@@ -1,4 +1,3 @@
-import javafx.scene.Node;
 
 class ListNode {
     int val;
