@@ -16,7 +16,7 @@ public class TowerOfHannoi {
         hannoi.orderedMoves.stream().forEach(System.out::println);
     }
 
-    // TOH(n, src, dest, temp) means move n disks from src to dest using temp
+    // TOH(n, src, dest, temp) -> means move n disks from src to dest using temp
     private void TOH(int n, int src, int dest, int temp) {
 
         if (n == 0) { return; }

@@ -4,6 +4,12 @@ public class SumOfAllXorPairs {
     // Time complexity: O(n)
     // Space complexity: O(1)
     // refer to bit manipulation 2 notes Q2 for explanation
+    // intution: for each bit position, we can calculate the number of elements with
+    // 0 and 1 at that position
+    // if we have x elements with 0 at that position and y elements with 1 at that
+    // position
+    // then the number of pairs that can be formed with 0 at that position and 1 at
+    // that position is x*y
     public int solve(int[] A) {
         int n = A.length;
         int ans = 0;

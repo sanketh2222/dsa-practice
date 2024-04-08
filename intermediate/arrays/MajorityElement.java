@@ -1,3 +1,5 @@
+package arrays;
+
 public class MajorityElement {
 
     public int repeatedNumber(int[] A) {

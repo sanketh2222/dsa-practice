@@ -1,5 +1,10 @@
 public class MaximumAndPairFinder {
 
+    //intuition: we need to find the maximum number that can be formed by taking AND of two numbers in the array
+    //we can do this by checking the bits from MSB to LSB
+    //if we can make a pair for a bit, we set that bit in the answer
+    //to make a pair for a bit, we need to have atleast 2 numbers with that bit set
+    //if we have atleast 2 numbers with that bit set, we set that bit in the answer
     public static int findMaximumAndPair(int[] nums) {
         int ans = 0;
 

@@ -7,8 +7,8 @@ public class LongestSubstringWithKDistinct {
     public static int solve(String A, int B) {
         Map<Character, Integer> mp = new HashMap<>();
         int maxLen = 0;
-        if (B == 0)
-            return 0;
+        if (B == 0) { return 0; }
+        
         int right = 0;
         int left = 0;
         while (right < A.length()) {

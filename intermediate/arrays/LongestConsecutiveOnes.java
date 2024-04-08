@@ -1,3 +1,5 @@
+package arrays;
+
 public class LongestConsecutiveOnes {
 
     public int solve(String A) {

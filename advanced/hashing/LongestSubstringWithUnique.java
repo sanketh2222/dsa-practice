@@ -2,9 +2,12 @@ package hashing;
 
 import java.util.HashMap;
 import java.util.Map;
+
 /**
  * https://leetcode.com/problems/longest-substring-without-repeating-characters/
  * longest substring without repeating characters
+ * tuf:
+ * https://takeuforward.org/data-structure/length-of-longest-substring-without-any-repeating-character/
  */
 public class LongestSubstringWithUnique {
 

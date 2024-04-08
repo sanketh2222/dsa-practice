@@ -54,7 +54,7 @@ public class MergeIntervals {
 
     public static void main(String[] args) {
         MergeIntervals mergeIntervals = new MergeIntervals();
-        int[][] intervals = { { 1, 3 }, { 2, 6 }, { 8, 10 }, { 15, 18 } };
+        int[][] intervals = { { 0, 2 }, { 1, 4 }, { 5, 6 }, { 6, 8 } };
         int[][] merged = mergeIntervals.merge(intervals);
         for (int[] interval : merged) {
             System.out.println(Arrays.toString(interval));
