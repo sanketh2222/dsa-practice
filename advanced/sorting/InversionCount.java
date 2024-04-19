@@ -1,5 +1,4 @@
 
-
 public class InversionCount {
     long count = 0;
     int mod = 1000000007;
@@ -49,8 +48,12 @@ public class InversionCount {
         }
 
         // Copy C to arr
-        for (int x = l; x <= r; x++) {
-            arr[x] = C[x - l];
+        // for (int x = l; x <= r; x++) {
+        //     arr[x] = C[x - l];
+        // }
+        // Copy C to arr
+        for (int x = 0; x < k; x++) {
+            arr[x + l] = C[x];
         }
 
         return count;
@@ -58,7 +61,7 @@ public class InversionCount {
 
     public static void main(String[] args) {
         InversionCount count = new InversionCount();
-        int[] arr = { 1, 3, 2, 3, 1};
+        int[] arr = { 1, 3, 2, 3, 1 };
         int ans = count.solve(arr);
         System.out.println(ans);
 
