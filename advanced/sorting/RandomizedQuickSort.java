@@ -54,7 +54,7 @@ public class RandomizedQuickSort {
 
     public static void main(String[] args) {
         int[] arr = { 9, 7, 5, 11, 12, 2, 14, 3, 10, 6 };
-        QuickSort sorter = new QuickSort();
+        RandomizedQuickSort sorter = new RandomizedQuickSort();
         sorter.quickSort(arr, arr.length);
 
         System.out.println("Sorted array:");
