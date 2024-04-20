@@ -4,6 +4,9 @@ public class MergeSort {
 
     // Example: arr[] = {12, 11, 13, 5, 6, 7}
     // sligtly bigger example: arr[] = {38, 27, 43, 3, 9, 82, 10}
+    //Time complexity of Merge Sort is O(n*Log n) in all the 3 cases (worst, average and best) as merge sort always divides the array into two halves and takes linear time to merge two halves.
+    //It requires equal amount of additional space as the unsorted array. Hence its not at all recommended for arrays of large sizes.
+    //Space complexity of Merge Sort is O(n) in all the 3 cases because of the additional space required for the temporary arrays.
     public void mergeSort(int[] arr, int l, int r) {
         if (l < r) {
             int m = (l + r) / 2;

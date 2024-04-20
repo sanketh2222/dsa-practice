@@ -1,9 +1,14 @@
+package sorting;
 public class RandomizedQuickSort {
 
     public void quickSort(int arr[], int N) {
         quickSort(arr, 0, N - 1);
     }
 
+    // Worst case TC for Randomized Quick Sort is O(n^2) and average case TC is O(nlogn)
+    // Worst case SC for Randomized Quick Sort is O(n) and average case SC is O(logn)
+    // Randomized Quick Sort is an improvement over Quick Sort as it reduces the chances of worst case time complexity
+    // worst case input for quick sort is already sorted array
     private void quickSort(int arr[], int s, int e) {
         if (s < e) {
             int pivotIndex = randomizedPartition(arr, s, e);

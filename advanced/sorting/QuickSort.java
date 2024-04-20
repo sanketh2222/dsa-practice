@@ -1,8 +1,12 @@
+package sorting;
+
 public class QuickSort {
     public void quickSort(int A[], int N) {
         quickSort(A, 0, N - 1);
     }
 
+    //Worst case time complexity is O(n^2) and average case time complexity is O(nlogn)
+    //Worst case SC is O(n) and average case SC is O(logn)
     private void quickSort(int A[], int s, int e) {
         if (s < e) {
             int pivotIndex = partition(A, s, e);
