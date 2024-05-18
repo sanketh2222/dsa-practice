@@ -17,7 +17,7 @@ public class FirstMissingNumber {
         for (int i = 0; i < A.length; i++) {
             int val = Math.abs(A[i]); // reason for abs is that we may encounter duplicates which are already marked as
                                       // negative already marked as -ve before
-            if (val <= A.length) {//skip the numbers greater than the length of the array
+            if (val <= A.length) {//skip the numbers greater than the length of the array(valid numbers)
                 A[val - 1] = (Math.abs(A[val - 1])) * -1;
             }
         }

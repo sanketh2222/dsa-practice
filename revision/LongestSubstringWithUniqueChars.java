@@ -23,10 +23,10 @@ public class LongestSubstringWithUniqueChars {
             char newChar = A.charAt(right);
 
             if (mp.containsKey(newChar)) {
-                left = Math.max(left, mp.get(newChar) + 1);
+                left = Math.max(left, mp.get(newChar) + 1);// we are moving left to the next index of prev occurence
                 // remember that when we more left towards the next index of prev occurence we
                 // are not deleting the occurences of characters before the current left
-                // <a href ="">
+                // * @ 17:50 of the video explanation for the above statement
             }
 
             ans = Math.max(ans, right - left + 1);
@@ -40,5 +40,14 @@ public class LongestSubstringWithUniqueChars {
 
     public static void main(String[] args) {
         lengthOfLongestSubstring("anc");
+        //different examples which covers all the cases
+        // "abcabcbb" -> 3
+        // "bbbbb" -> 1
+        // "pwwkew" -> 3
+        // "abcabcbb" -> 3
+        // "abcabcbb" -> 3
+        //"abcaabcdba" -> 4
+
+
     }
 }
