@@ -12,7 +12,7 @@ package revision;
 
 public class PalindromicLinkedList {
 
-    public int lPalin(ListNode A) {
+    public int isPalindrome(ListNode A) {
         // LOGIC : is LL is a palindrome then first half = reversed 2nd half
 
         // find out the mid
@@ -42,7 +42,7 @@ public class PalindromicLinkedList {
         ListNode slow = head;
         ListNode fast = head;
 
-        while (slow != null && slow.next != null && fast.next != null && fast.next.next != null) {
+        while (fast.next != null && fast.next.next != null) {
             slow = slow.next;
             fast = fast.next.next;
         }
@@ -79,7 +79,7 @@ public class PalindromicLinkedList {
         node1.next.next.next = new ListNode(3);
         node1.next.next.next.next = new ListNode(6);
         PalindromicLinkedList list = new PalindromicLinkedList();
-        System.out.println(list.lPalin(node1));
+        System.out.println(list.isPalindrome(node1));
 
     }
 }
