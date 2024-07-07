@@ -32,5 +32,6 @@ public class NextGreaterElement {
         for (int i = 0; i < ans.length; i++) {
             System.out.print(ans[i] + " ");
         }
+        // Should print: 35 42 42 -1 28 39 -1 28 -1
     }
 }

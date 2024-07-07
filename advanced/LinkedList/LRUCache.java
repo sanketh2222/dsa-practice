@@ -96,6 +96,7 @@ public class LRUCache {
 
     }
 
+    //add in MRU side
     private void insertTail(int key, int value) {
         // Set the incomming node as MRU
         DoublyLinkedList currNode = new DoublyLinkedList(value);

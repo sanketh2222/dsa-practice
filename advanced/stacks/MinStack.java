@@ -1,8 +1,12 @@
 
-
 import java.util.Stack;
 
 public class MinStack {
+
+    // Question desc:
+    // Design a stack that supports push, pop, top, and retrieving the minimum
+    // element in constant time.
+    // Implement the MinStack class:
 
     Stack<Integer> stack = new Stack<>();
     Stack<Integer> minStack = new Stack<>();
@@ -24,7 +28,7 @@ public class MinStack {
 
             if (popedValue == minStack.peek()) {
                 minStack.pop();
-                minValue = minStack.isEmpty() ?  Integer.MAX_VALUE : minStack.peek();
+                minValue = minStack.isEmpty() ? Integer.MAX_VALUE : minStack.peek();
             }
         }
 

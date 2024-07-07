@@ -11,11 +11,6 @@ public class NearestSmallestElement {
         Stack<Integer> previousSmallerValuesStack = new Stack<Integer>();
         for (int i = 0; i < A.length; i++) {
 
-            // if (!previousSmallerValuesStack.isEmpty() && previousSmallerValuesStack.peek() < A[i]) {
-            //     ans[i] = previousSmallerValuesStack.peek();
-
-            // }
-
             while (!previousSmallerValuesStack.isEmpty() && previousSmallerValuesStack.peek() >= A[i]) {
                 previousSmallerValuesStack.pop();
             }
@@ -32,7 +27,7 @@ public class NearestSmallestElement {
         NearestSmallestElement nse = new NearestSmallestElement();
         int[] arr = { 4, 5, 2, 10, 8 };//NSL
         int[] ans = nse.prevSmaller(arr);
-        Arrays.stream(ans).forEach(System.out::println);
+        Arrays.stream(ans).forEach(System.out::println); // Should print: -1 4 -1 2 2
         
 
     }

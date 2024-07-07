@@ -7,17 +7,17 @@ public class SpecialIndex {
 
         // Prefix sum of even and odd indexed elements
         for (int i = 0; i < A.length; i++) {
-            if (i % 2 == 0)
+            if (i % 2 == 0)// skip contribution of odd indexes
                 sumEven += A[i];
-            prefixEven[i] = sumEven;
+            prefixEven[i] = sumEven; // skip contribution of odd indexes
         }
 
         // Prefix sum of odd indexed elements
         for (int i = 0; i < A.length; i++) {
-            if (i % 2 == 1)
+            if (i % 2 == 1)// skip contribution of even indexes
                 sumOdd += A[i];
 
-            prefixOdd[i] = sumOdd;
+            prefixOdd[i] = sumOdd;// skip contribution of even indexes
         }
 
         sumEven = 0;
